@@ -6,7 +6,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -21,6 +21,7 @@
     "gatsby-plugin-manifest": "^3.0.0",
     "gatsby-plugin-nprogress": "^3.0.0",
     "gatsby-plugin-offline": "^4.0.0",
+    "gatsby-plugin-page-creator": "^3.0.0",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^4.0.0",
     "gatsby-plugin-sitemap": "^3.0.0",
@@ -31,6 +32,7 @@
     "styled-components": "^5.2.1"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "prettier": "2.2.1"
   },
   "repository": {

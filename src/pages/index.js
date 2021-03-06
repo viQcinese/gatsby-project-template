@@ -1,5 +1,11 @@
 import React from "react"
 
+import { Container, Text } from './styles'
+
 export default function Home() {
-  return <div>Hello world!</div>
+  return (
+    <Container>
+      <Text>Hello, Gatsby</Text>
+    </Container>
+  )
 }
