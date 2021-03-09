@@ -56,6 +56,20 @@ module.exports = {
         nocase: true,
       },
     },
+    {
+      resolve: 'gatsby-source-prismic',
+      options: {
+        repositoryName: 'example-repository-name',
+        accessToken: 'example-access-token',
+        releaseID: 'example-id',
+        // linkResolver: () => (doc) => linkResolver(doc),
+        schemas: {
+          // page: require('./custom_types/example_type.json'),
+        },
+        lang: '*',
+        prismicToolbar: true,
+      },
+    },
     'gatsby-plugin-offline',
   ],
 };
