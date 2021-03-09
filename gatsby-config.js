@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
@@ -20,21 +21,6 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
-      },
-    },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Oswald`,
-            subsets: [`latin`],
-          },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `700`]
-          },
-        ],
       },
     },
     {
